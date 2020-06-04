@@ -9,8 +9,10 @@ const GoalInput = props => {
     };
 
     const addGoalHandler = () => {
-        props.onAddGoal(enteredGoal);
-        setEnteredGoal('');
+        if(enteredGoal !== '') {
+            props.onAddGoal(enteredGoal);
+            setEnteredGoal('');
+        }
     };
 
     const cancelModayHandler = () => {
