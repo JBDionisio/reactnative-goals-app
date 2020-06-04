@@ -6,7 +6,7 @@ const GoalInput = props => {
 
     const goalInputHandler = (enteredText) => {
         setEnteredGoal(enteredText);
-      };
+    };
 
     return (
         <View style={styles.inputContainer}>
